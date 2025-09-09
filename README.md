@@ -199,6 +199,6 @@ AI处理包括：
 
 ## 项目参考
 
-代码是fork自[https://github.com/junyi-zhu/resume-ai](https://github.com/junyi-zhu/resume-ai) ， 感谢原作者。我基于他的代码进行大量修改，基本上和原来项目的功能不一样，但是适合国内用户，主要功能就是帮忙深度修改简历。
+代码是fork自https://github.com/srbhr/Resume-Matcher ， 感谢原作者。我基于他的代码进行大量修改，基本上和原来项目的功能不一样，但是适合国内用户，主要功能就是帮忙深度修改简历。
 
 提示语的模板来自 ：【角色】洞察人心的面试官与资深HRBP (v2.0) ，不知道来源作者，是一个公众号大V写的，有知道来源请告知补充上。
